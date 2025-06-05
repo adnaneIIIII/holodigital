@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL")
+}
+
+
+
+model Purchase {
+  id        String   @id @default(uuid())
+  firstname String
+  lastname  String
+  email     String   
+  phone     String
+  productname String
+  price     Float
+
+  country   Countrys
+}
+
+enum Countrys {
+  United_States
+  Canada
+  United_Kingdom
+  Australia
+  Philippines
+  Other
+}
+
+
+model contact {
+  id            String @id @default(uuid())
+
+  firstname     String
+  lastname      String
+  email         String
+  phone         String
+  message       String
+  createdAt     DateTime @default(now())
+}
