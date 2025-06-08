@@ -69,11 +69,12 @@ export default function HeroSection() {
               className="absolute inset-0 -z-20"
             >
               <Image
-                src={"/bg2.jpg"}
+                src={"/agency.png"}
                 alt="background"
-                className="absolute inset-x-0 top-56 -z-20 hidden lg:top-0 dark:block"
+                className="absolute w-full min-h-max inset-x-0 top-56 -z-20 hidden lg:top-0 dark:block"
                 width="1320"
                 height="1080"
+                quality={100}
               />
             </AnimatedGroup>
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
@@ -106,7 +107,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                  className="mt-8 text-balance sm:text-4xl text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem]"
                 >
                   Empowering Small Businesses to Succeed Online
                 </TextEffect>

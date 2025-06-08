@@ -8,7 +8,7 @@ function Navbar() {
       <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
         <div className="flex items-start">
           <Link href="/" className="flex items-center gap-2">
-            <Image src={"/wiholo.png"} alt="logo" width={120} height={100} />
+            <Image src={"/logo-w.png"} alt="logo" width={120} height={100} />
           </Link>
         </div>
         <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">

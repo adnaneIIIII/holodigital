@@ -81,7 +81,7 @@ export default function Pricing(props: any) {
               </CardContent>
               <CardFooter className="mt-auto">
                 <Button variant="outline" size="lg" className="w-full" asChild>
-                  <Link href={`/checkout/${item?.id}`} >
+                  <Link href={`/check-out/${item?.id}`} >
                     Get Started
                   </Link>
                 </Button>

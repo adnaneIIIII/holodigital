@@ -6,10 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { getSingleProduct } from "@/services";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -23,6 +20,8 @@ import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { Purchase } from "@/lib/ZodSchema";
 import Header from "@/components/checkout/header";
+import Link from "next/link";
+import Head from "next/head";
 
 // Replace this with your actual GraphQL endpoint schema for enums
 
@@ -116,24 +115,28 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
   return (
     <>
+      <Head>
+        <title>Best IPTV Service - High-Quality Streaming</title>
+      </Head>
       {/* Header */}
       <Header />
       <div className="min-h-screen bg-gray-50 ">
-        <div className="text-5xl font-bold text-black/80 py-14 text-center bg-gray-50 tracking-wider">
+        <div className="text-5xl font-bold  text-center bg-gray-50 tracking-wider">
           CheckOut
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-slate-100 items-center flex rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7">
               <div className=" rounded-lg shadow-sm p-6 transition-all">
+              <div className="text-5xl font-bold text-black/80 py-14  tracking-wider">
+                  CheckOut
+                </div>
                 <h1 className="text-2xl font-bold text-gray-800 mb-6">
                   Details
                 </h1>
 
                 <form id={from.id} onSubmit={from.onSubmit} action={action}>
-                  <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                    Device Information
-                  </h2>
+                 
                   <div>
                     <Input
                       type="hidden"
@@ -142,8 +145,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                       defaultValue={fields.price.initialValue}
                       value={product[0]?.price}
                     />
-
-                   
 
                     <Input
                       type="hidden"
@@ -316,8 +317,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     </div>
 
                     <div className="flex justify-start gap-3 mt-4">
-                      <Button className="w-full py-6 bg-gradient-to-r from-orange-600 to-red-600 border-orange-500 text-white">
-                        Buy Now
+                      <Button className="w-full py-6 bg-gradient-to-r from-orange-600 to-red-600 border-orange-500 text-white" asChild>
+                        <Link href={`/pay/${params?.id}`}>Buy Now</Link>
                       </Button>
                     </div>
                   </div>

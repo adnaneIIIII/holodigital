@@ -3,7 +3,7 @@
 import CallToAction from "@/components/home/CallToAction";
 import Contact from "@/components/home/contact";
 import Devices from "@/components/home/devices";
-import PricingCard from "@/components/home/pricing-chef";
+import PricingCard from "@/components/home/pricing-chef-copy";
 import Faq from "@/components/home/FAQs";
 import Features from "@/components/home/Features";
 import Footer from "@/components/home/Footer";
@@ -52,14 +52,14 @@ export default function Page() {
       <LogoTicker />
       <Features />
       <ProductShow />
-      <PricingCard />
+      <PricingCard {...product} />
+
       {/* <Pricing product={product} /> */}
       <Devices />
       <Contact />
       <Faq />
       <CallToAction />
       <Footer />
-
     </>
   );
 }

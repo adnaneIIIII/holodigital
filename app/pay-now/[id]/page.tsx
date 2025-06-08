@@ -32,36 +32,17 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     console.log(res);
   };
 
-  const socialMediaFeatures = [
-    [
-      "3 social media platforms",
-      "12 posts per month",
-      "Basic content creation",
-      "Monthly performance report",
-      "Email support",
-    ],
-    [
-      "All social media platforms",
-      "30 posts per month",
-      "Premium content creation",
-      "Weekly performance reports",
-      "Full community management",
-      "Complete website management",
-      "Social media advertising",
-      "24/7 VIP support",
-    ],
-    ["Everything in Pro Plan", "5GB Cloud Storage", "Email and Chat Support"],
+  const features = [
+    "23,000+ Live Channels",
+    "125,000+ Movies",
+    "37,000+ Series",
+    "4K/FHD/HD Quality",
+    "99.9% Uptime",
+    "24/7 Support",
+    "All Devices Supported",
+    "Anti-Freeze System",
+    "Free Updates",
   ];
-
-  let id: number = 0;
-
-  if (params.id === "cma3zclf8igzf07jxehynv8d3") {
-    id = 2;
-  } else if (params.id === "cma3z9xwrc42h07lfsy8k3u61") {
-    id = 1;
-  } else if (params.id === "cma3z3deac15607lfqumu7ymp") {
-    id = 0;
-  }
 
   const handlePaypalApprove = (data: any, actions: any) => {
     return actions.order.capture().then(function (details: any) {
@@ -85,51 +66,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
   return (
     <>
-      {/* <Header /> */}
-
-      <header className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <Link href={"/home"}>
-              <Image
-                src={"/mntdigital.png"}
-                width={120}
-                height={100}
-                alt="IPTV service offering high-quality streaming"
-                className="h-14 w-28 relative"
-              />
-            </Link>
-            <div className="hidden sm:flex items-center space-x-6">
-              <div className="flex items-center">
-                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500 text-white">
-                  <CheckCircle className="w-4 h-4" />
-                </div>
-                <span className="ml-2 text-sm font-medium text-gray-600">
-                  Cart
-                </span>
-              </div>
-
-              <div className="flex items-center">
-                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500 text-white">
-                  <span className="text-xs font-bold">2</span>
-                </div>
-                <span className="ml-2 text-sm font-medium text-gray-600">
-                  Details
-                </span>
-              </div>
-
-              <div className="flex items-center">
-                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500 text-white">
-                  <span className="text-xs font-bold">3</span>
-                </div>
-                <span className="ml-2 text-sm font-medium text-gray-900">
-                  Checkout
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <div className="min-h-screen bg-gray-50 ">
         <div className="text-5xl font-bold  text-center bg-gray-50 tracking-wider">
@@ -179,7 +116,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                             What You Get
                           </h3>
                           <div className="space-y-3">
-                            {socialMediaFeatures[id].map((feature, index) => (
+                            {features.map((feature, index) => (
                               <div
                                 key={index}
                                 className="flex items-center space-x-3"
@@ -193,7 +130,30 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                       </Card>
                       <div className="space-y-4">
                         {/* Product preview */}
-                       
+                        <div className="flex items-center gap-4 border-b border-gray-800 pb-4">
+                          <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-md bg-gray-800">
+                            <Image
+                              src={product[0]?.image[0]?.url}
+                              alt={product[0]?.name}
+                              width={80}
+                              height={80}
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="flex-grow">
+                            <h3 className="text-sm font-medium text-white">
+                              {product[0]?.name}
+                            </h3>
+                            <p className="mt-1 text-sm text-gray-400">
+                              Modern Design
+                            </p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-sm font-medium text-white">
+                              ${product[0]?.price}
+                            </p>
+                          </div>
+                        </div>
                         <div className="mt-6 space-y-2">
                           <div className="flex justify-between">
                             <span className="text-gray-400">Subtotal</span>

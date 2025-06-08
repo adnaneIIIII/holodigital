@@ -15,16 +15,16 @@ import { Button } from "./ui/button";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="bg-black">
       {/* Contact Section */}
       <section
         id="contact"
-        className="w-full py-12 md:py-24 lg:py-32 bg-card flex justify-center text-white">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+        className="w-full  py-12 md:py-24 lg:py-32 bg-card flex justify-center text-white">
+        <div className="container  px-4 md:px-6">
+          <div className="grid gap-6  lg:grid-cols-2 lg:gap-12">
+            <div className="flex  flex-col justify-center space-y-4">
+              <div className="space-y-2 ">
+                <h2 className="text-3xl  font-bold tracking-tighter sm:text-5xl">
                   Get in Touch
                 </h2>
                 <p className="max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

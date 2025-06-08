@@ -11,10 +11,14 @@ import {
 import Navbar from "@/components/home/navbar";
 import Devices from "@/components/home/devices";
 import FooterSection from "@/components/home/Footer";
+import Head from "next/head";
 
 export default function HowItWorks() {
   return (
     <>
+    <Head>
+  <title>Best IPTV Service - High-Quality Streaming</title>
+</Head>
       <Navbar />
       <main className="min-h-screen bg-black text-white">
         <section className="container mx-auto text-center py-16 px-4">
