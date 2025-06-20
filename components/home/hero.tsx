@@ -6,6 +6,7 @@ import { AnimatedGroup } from "../ui/animated-group";
 import { TextEffect } from "../ui/text-effect";
 
 export default function HeroSection() {
+  
   const transitionVariants = {
     item: {
       hidden: {

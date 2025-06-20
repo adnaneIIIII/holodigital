@@ -25,3 +25,10 @@ export const contact = z.object({
   phone: z.string(),
   message: z.string(),
 });
+
+export const Postschema = z.object({
+  title: z.string().min(1, "title  is required"),
+  content: z.string().min(1, "content is required"),
+  image: z.string().min(1, "image number is required"),
+  category: z.string().min(1, "category name is required"),
+});

@@ -46,3 +46,15 @@ model contact {
   message       String
   createdAt     DateTime @default(now())
 }
+
+
+model  Post {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  category String
+  image    String
+        
+  createdAt DateTime @default(now())
+
+}

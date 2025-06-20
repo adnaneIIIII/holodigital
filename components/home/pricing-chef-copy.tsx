@@ -103,7 +103,7 @@ const pricingPlans: PricingPlan[] = [
 
 export default function PricingSection(props: Product[]) {
   return (
-    <section className="py-16 px-4 bg-black min-h-screen" id="pricing">
+    <section className="py-16 px-4   min-h-screen" id="pricing">
       <div className="max-w-7xl mx-auto">
         {/* Top Banner */}
         <div className="border-orange-500 border-2 rounded-lg p-4 mb-12 text-center">
@@ -127,6 +127,7 @@ export default function PricingSection(props: Product[]) {
                   ? "ring-2 ring-orange-500 shadow-2xl shadow-orange-500/20"
                   : "hover:border-gray-600"
               }`}
+              key={index}
             >
               {plan.isPopular && (
                 <Badge className="absolute -top-3 right-4 bg-orange-500 hover:bg-orange-600 text-white ">

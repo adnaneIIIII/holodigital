@@ -50,6 +50,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     console.log(res);
   };
 
+
+  
   const [lastResult, action] = useFormState(createorder, undefined);
   const [from, fields] = useForm({
     lastResult,
@@ -120,11 +122,9 @@ export default function ProductPage({ params }: { params: { id: string } }) {
       </Head>
       {/* Header */}
       <Header />
-      <div className="min-h-screen bg-gray-50 ">
-        <div className="text-5xl font-bold  text-center bg-gray-50 tracking-wider">
-          CheckOut
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-slate-100 items-center flex rounded-3xl">
+      <div className="min-h-screen bg-white">
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white items-center flex rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7">
               <div className=" rounded-lg shadow-sm p-6 transition-all">
@@ -325,18 +325,18 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 </form>
               </div>
             </div>
-            <div className="lg:col-span-5">
-              <Card className="mb-2">
+            <div className="lg:col-span-5 border-0">
+              <Card className="mb-2 bg-slate-50 border-0">
                 <CardContent className="pt-4">
-                  <h2 className="mb-4 text-xl font-semibold text-white">
+                  <h2 className="mb-4 text-xl font-semibold text-gray-900">
                     Order Summary
                   </h2>
                   <div className="lg:col-span-5">
                     <div className="space-y-6">
                       {/* What You Get */}
-                      <Card className="bg-slate-800 border-gray-600">
+                      <Card className=" bg-slate-50 border-0 text-gray-900">
                         <CardContent className="p-6">
-                          <h3 className="text-white text-xl font-bold mb-4">
+                          <h3 className=" text-xl font-bold mb-4 text-gray-900">
                             What You Get
                           </h3>
                           <div className="space-y-3">
@@ -346,7 +346,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                 className="flex items-center space-x-3"
                               >
                                 <Check className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                                <span className="text-gray-300">{feature}</span>
+                                <span className="text-gray-900">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -354,7 +354,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                       </Card>
                       <div className="space-y-4">
                         {/* Product preview */}
-                        <div className="flex items-center gap-4 border-b border-gray-800 pb-4">
+                        <div className="flex items-center gap-4 border-b pb-4">
                           <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-md bg-gray-800">
                             <Image
                               src={product[0]?.image[0]?.url}
@@ -365,37 +365,37 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                             />
                           </div>
                           <div className="flex-grow">
-                            <h3 className="text-sm font-medium text-white">
+                            <h3 className="text-sm font-medium text-gray-900">
                               {product[0]?.name}
                             </h3>
-                            <p className="mt-1 text-sm text-gray-400">
+                            <p className="mt-1 text-sm text-gray-500">
                               Modern Design
                             </p>
                           </div>
                           <div className="text-right">
-                            <p className="text-sm font-medium text-white">
+                            <p className="text-sm font-medium text-gray-900">
                               ${product[0]?.price}
                             </p>
                           </div>
                         </div>
                         <div className="mt-6 space-y-2">
                           <div className="flex justify-between">
-                            <span className="text-gray-400">Subtotal</span>
-                            <span className="font-medium text-white">
+                            <span className="text-gray-500">Subtotal</span>
+                            <span className="font-medium text-gray-900">
                               ${product[0]?.price}
                             </span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-400">Compare Price</span>
+                            <span className="text-gray-500">Compare Price</span>
                             <span className="font-medium text-red-400 line-through">
                               ${product[0]?.compareAtPrice}
                             </span>
                           </div>
                           <div className="flex justify-between border-t border-gray-800 pt-2 mt-2">
-                            <span className="font-medium text-white">
+                            <span className="font-medium text-gray-900">
                               Total
                             </span>
-                            <span className="font-bold text-white">
+                            <span className="font-bold text-gray-900">
                               ${product[0]?.price}
                             </span>
                           </div>
@@ -407,7 +407,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                       </Button>
                     </div> */}
 
-                        <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400">
+                        <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-500">
                           <Lock className="h-4 w-4" />
                           <span>Secure Checkout - SSL Encrypted</span>
                         </div>

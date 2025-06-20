@@ -30,7 +30,7 @@ export default function Contact() {
   });
 
   return (
-    <div className="bg-black">
+    <div className="bg-black mt-16">
       {/* Contact Section */}
       <section
         id="contact"
@@ -63,14 +63,14 @@ export default function Contact() {
                   <Mail className="mt-1 h-5 w-5 " />
                   <div>
                     <h3 className="font-bold">Email</h3>
-                    <p className="">hello@socialboost.com</p>
+                    <p className="">support@holoiptv.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="mt-1 h-5 w-5 " />
                   <div>
                     <h3 className="font-bold">Phone</h3>
-                    <p className="">(555) 123-4567</p>
+                    <p className="">+1 (782) 222-1472</p>
                   </div>
                 </div>
               </div>

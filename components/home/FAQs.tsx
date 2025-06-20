@@ -77,11 +77,17 @@ const AccordianItem = ({
 };
 export default function Faq() {
   return (
-    <div className="bg-black  py-[72px] sm:py-24 flex justify-center">
+    <div className=" py-[72px] sm:py-24 flex justify-center">
       <div className="container">
-        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
-          Frequently asked question
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            FAQ
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-400 mx-auto rounded-full"></div>
+          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+            frequently asked questions
+          </p>
+        </div>
         <div className="mt-12 max-w-[648px] mx-auto">
           {items.map(({ question, answer }) => (
             <AccordianItem question={question} answer={answer} key={question} />

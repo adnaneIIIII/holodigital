@@ -30,13 +30,15 @@ export default function Pricing(props: any) {
       "24/7 VIP support",
     ],
     ["Everything in Pro Plan", "5GB Cloud Storage", "Email and Chat Support"],
+    ["Everything in Pro Plan"],
   ];
   const underprice: string[] = [
     "Perfect for small businesses just getting started with social media.",
     "Comprehensive solution for established businesses seeking maximum impact.",
     "Ideal for businesses looking to expand their online presence.",
+    "Ideal for businesses looking to expand their online presence.",
   ];
-  const planNames = ["Starter", "Pro", "Enterprise"]; // Added plan names
+  const planNames = ["Starter", "Pro", "Enterprise", "Get started"]; // Added plan names
   return (
     <section className="py-16 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
@@ -81,9 +83,7 @@ export default function Pricing(props: any) {
               </CardContent>
               <CardFooter className="mt-auto">
                 <Button variant="outline" size="lg" className="w-full" asChild>
-                  <Link href={`/check-out/${item?.id}`} >
-                    Get Started
-                  </Link>
+                  <Link href={`/check-out/${item?.id}`}>Get Started</Link>
                 </Button>
               </CardFooter>
             </Card>

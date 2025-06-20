@@ -12,19 +12,19 @@ export default function Devices() {
     "5.webp",
     "6.webp",
     "7.webp",
-    "8.webp",
     "9.webp",
     "11.webp",
   ];
 
   return (
-    <div className="py-[72px] sm:py-34 bg-black flex justify-center">
+    <div className="py-[72px] sm:py-34   flex justify-center">
       <div className="container py-16">
-        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
+        <h1 className="text-center text-4xl font-semibold lg:text-5xl">
           Works on all devices
-        </h2>
+        </h1>
+        <div className="w-24 mt-8 h-1 bg-gradient-to-r from-orange-500 to-orange-400 mx-auto rounded-full"></div>
 
-        <div className="flex overflow-hidden mt-16 before:content-[''] before:z-10 after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-10 after:w-10 relative  after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
+        <div className="flex overflow-hidden mt-16 before:content-[''] before:z-10 after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-10 after:w-10 relative  after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#0a0a0a,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#0a0a0a,rgb(0,0,0,0))]">
           <motion.div
             transition={{
               duration: 25,

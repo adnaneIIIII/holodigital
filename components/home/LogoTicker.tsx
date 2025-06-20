@@ -4,28 +4,43 @@ import Image from "next/image";
 
 export default function LogoTicker() {
   const image = [
-    "a.jpg",
+    "8.jpg",
     "q.jpg",
     "r.jpg",
-    "d.jpg",
+    "k.jpeg",
     "e.jpg",
     "f.jpg",
-    "s.jpg",
+    "2.jpg",
     "t.jpg",
     "u.jpg",
-    "l.jpg",
+    "3.jpg",
     "y.jpg",
-    "z.jpg",
+    "7.jpg",
+    "1.jpg",
+    "5.jpeg",
+    "6.jpg",
+    "4.jpg",
+    "a.jpg",
+    "9.jpg",
+    "10.jpg",
   ];
 
   return (
-    <div className="py-[72px] sm:py-24 bg-black flex justify-center">
+    <div className="py-[72px] sm:py-24  flex justify-center">
       <div className="container">
-        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
+      <div className="mx-auto max-w-2xl space-y-6 text-center my-20">
+          <h1 className="text-center text-4xl font-semibold lg:text-5xl">
           Everything you need
-        </h2>
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-400 mx-auto rounded-full"></div>
 
-        <div className="flex overflow-hidden mt-10 before:content-[''] before:z-10 after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-10 after:w-10 relative  after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
+          <p>
+           All the latest Movies TV Shows and sports events 
+          </p>
+        </div>
+        
+
+        <div className="flex overflow-hidden mt-10 before:content-[''] before:z-10 after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-10 after:w-10 relative  after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#0a0a0a,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#0a0a0a,rgb(0,0,0,0))]">
           <motion.div
             transition={{
               duration: 25,
