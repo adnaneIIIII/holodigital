@@ -2,7 +2,6 @@
 import Contact from "@/components/contact";
 import Features from "@/components/features-3";
 import FooterSection from "@/components/footer";
-import HeroSection from "@/components/hero-section";
 import Pricing from "@/components/pricing";
 import Testimonials from "@/components/testimonials";
 import { bannerSection } from "@/services";
@@ -40,7 +39,7 @@ export default function Page() {
 
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <Features />
       <Pricing product={product} />
       <Testimonials />

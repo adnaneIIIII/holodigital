@@ -62,11 +62,11 @@ export default function Newhero() {
 
         <div className="container  relative pt-8">
           <div className="flex items-center justify-center ">
-            <AnimatedGroup variants={transitionVariants}>
+            {/* <AnimatedGroup variants={transitionVariants}>*/}
               <Link
                 href="#link"
                 className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-              >
+              > 
                 <span className="bg-gradient-to-r from-[#a52f00] to-[#dac574] text-transparent bg-clip-text [-webkit-background-clip:text]">
                   Entertiment 2.0 is here
                 </span>
@@ -86,7 +86,7 @@ export default function Newhero() {
                   </div>
                 </div>
               </Link>
-            </AnimatedGroup>
+            {/* </AnimatedGroup> */}
           </div>
           <div className="flex justify-center ">
             <div className="inline-flex relative">
@@ -101,7 +101,7 @@ export default function Newhero() {
             </div>
           </div>
 
-          <AnimatedGroup
+          {/* <AnimatedGroup
             variants={{
               container: {
                 visible: {
@@ -114,7 +114,7 @@ export default function Newhero() {
               ...transitionVariants,
             }}
             className="mt-8 flex flex-col items-center justify-center gap-2 md:flex-row"
-          >
+          > */}
             <div className="flex justify-center mb-8">
               <Button
                 variant={"default"}
@@ -127,7 +127,7 @@ export default function Newhero() {
                 </Link>
               </Button>
             </div>
-          </AnimatedGroup>
+          {/* </AnimatedGroup> */}
         </div>
       </div>
       <div className="container mt-8 w-full max-w-7xl mx-auto">

@@ -80,28 +80,28 @@ export default function HeroSection() {
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                <AnimatedGroup variants={transitionVariants}>
-                  <Link
-                    href="#link"
-                    className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-                  >
-                    <span className="text-foreground text-sm">
+                {/* <AnimatedGroup variants={transitionVariants}> */}
+                <Link
+                  href="#link"
+                  className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                >
+                  <span className="text-foreground text-sm">
                     Introducing MNTagency for your Business
-                    </span>
-                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+                  </span>
+                  <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
-                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                      </div>
+                  <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                    <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                      <span className="flex size-6">
+                        <ArrowRight className="m-auto size-3" />
+                      </span>
+                      <span className="flex size-6">
+                        <ArrowRight className="m-auto size-3" />
+                      </span>
                     </div>
-                  </Link>
-                </AnimatedGroup>
+                  </div>
+                </Link>
+                {/* </AnimatedGroup> */}
 
                 <TextEffect
                   preset="fade-in-blur"
@@ -119,11 +119,12 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  We help small businesses establish and grow their digital presence with custom websites, social media
-                  management, and brand identity design.
+                  We help small businesses establish and grow their digital
+                  presence with custom websites, social media management, and
+                  brand identity design.
                 </TextEffect>
 
-                <AnimatedGroup
+                {/* <AnimatedGroup
                   variants={{
                     container: {
                       visible: {
@@ -136,33 +137,33 @@ export default function HeroSection() {
                     ...transitionVariants,
                   }}
                   className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
+                > */}
+                <div
+                  key={1}
+                  className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
                 >
-                  <div
-                    key={1}
-                    className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
-                  >
-                    <Button
-                      asChild
-                      size="lg"
-                      className="rounded-xl px-5 text-base"
-                    >
-                      <Link href="#link">
-                        <span className="text-nowrap">Start Building</span>
-                      </Link>
-                    </Button>
-                  </div>
                   <Button
-                    key={2}
                     asChild
                     size="lg"
-                    variant="ghost"
-                    className="h-10.5 rounded-xl px-5"
+                    className="rounded-xl px-5 text-base"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Request a demo</span>
+                      <span className="text-nowrap">Start Building</span>
                     </Link>
                   </Button>
-                </AnimatedGroup>
+                </div>
+                <Button
+                  key={2}
+                  asChild
+                  size="lg"
+                  variant="ghost"
+                  className="h-10.5 rounded-xl px-5"
+                >
+                  <Link href="#link">
+                    <span className="text-nowrap">Request a demo</span>
+                  </Link>
+                </Button>
+                {/* </AnimatedGroup> */}
               </div>
             </div>
           </div>

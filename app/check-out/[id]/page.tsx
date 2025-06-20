@@ -19,9 +19,7 @@ import { createorder } from "@/app/action";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { Purchase } from "@/lib/ZodSchema";
-import Header from "@/components/checkout/header";
 import Link from "next/link";
-import { Item } from "@radix-ui/react-select";
 
 // Replace this with your actual GraphQL endpoint schema for enums
 

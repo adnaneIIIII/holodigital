@@ -11,7 +11,6 @@ import { redirect } from "next/navigation";
 const Hero = () => {
   const clikhandler = () => {
     redirect("#pricing");
-    console.log("clicked");
   };
   return (
     <div className="relative flex flex-col items-center justify-center w-full py-20">
