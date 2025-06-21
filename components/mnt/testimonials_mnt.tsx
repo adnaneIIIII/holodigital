@@ -141,7 +141,7 @@ export default function Component() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-400 mx-auto rounded-full"></div>
           <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what real customers have to
+            Don&apos;t just take our word for it. Here&apos;s what real customers have to
             say about their experience.
           </p>
         </div>
