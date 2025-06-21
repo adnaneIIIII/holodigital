@@ -26,7 +26,7 @@ export default function LogoTicker() {
   ];
 
   return (
-    <div className="py-[72px] sm:py-24  flex justify-center">
+    <div className="py-[72px] sm:py-24  mb-16 flex justify-center">
       <div className="container">
       <div className="mx-auto max-w-2xl space-y-6 text-center my-20">
           <h1 className="text-center text-4xl font-semibold lg:text-5xl">

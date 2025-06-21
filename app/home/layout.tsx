@@ -1,18 +1,17 @@
-
-import React from 'react';
+import Clarity from "@/components/Clarity";
+import React from "react";
 
 interface Props {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const MarketingLayout = ({ children }: Props) => {
-    return (
-        <>
-            <main className="mx-auto w-full z-40 relative">
-                {children}
-            </main>
-        </>
-    );
+  return (
+    <>
+      <Clarity />
+      <main className="mx-auto w-full z-40 relative">{children}</main>
+    </>
+  );
 };
 
-export default MarketingLayout
+export default MarketingLayout;

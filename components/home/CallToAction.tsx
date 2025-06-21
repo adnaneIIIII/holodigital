@@ -15,7 +15,7 @@ export default function CallToAction() {
           </p>
         </div>
 
-        <form className="mt-10 flex  gap-2.5 max-w-sm mx-auto sm:flex-row items-center ">
+        <form className="mt-10 flex justify-center  gap-2.5 max-w-sm mx-auto sm:flex-row items-center ">
           <input
             type="email"
             placeholder="your@email.com"

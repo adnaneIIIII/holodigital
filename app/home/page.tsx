@@ -14,9 +14,11 @@ import Analysis from "@/components/mnt/analysis";
 import FancyTestimonialsSlider from "@/components/mnt/testimonials";
 import { StaticImageData } from "next/image";
 import BlogPost from "@/components/mnt/blog";
+
 import Head from "next/head";
 import { PostesASC } from "../action";
 import Navbar from "@/components/home/navbar";
+import Component from "@/components/mnt/testimonials_mnt";
 
 type Product = {
   compareAtPrice: number;
@@ -34,8 +36,6 @@ type Product = {
 type GetProductResponse = {
   product: Product[];
 };
-
-
 
 type BlogItem = {
   id: string;
@@ -125,8 +125,6 @@ export default function Page() {
     console.log(res.product);
   };
 
-
-
   const [blogPosts, setBlogPosts] = useState<BlogItem[]>([]);
 
   useEffect(() => {
@@ -167,12 +165,16 @@ export default function Page() {
       {/* <Features /> */}
       {/* <ProductShow /> */}
       <PricingCard {...product} />
+      <BlogPost pos={blogPosts} />
+
       <Analysis />
+      <Component />
       {/* <Pricing product={product} />*/}
       <Devices />
-      <FancyTestimonialsSlider testimonials={testimonials as any} />
+
+      {/* <FancyTestimonialsSlider testimonials={testimonials as any} /> */}
       <Contact />
-      <BlogPost pos={blogPosts} />
+
       <Faq />
 
       {/* <LanguageSupport /> */}

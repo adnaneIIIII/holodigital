@@ -6,9 +6,19 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 const items = [
   {
-    question: "What do we offer",
+    question: "What is IPTV?",
     answer:
-      "Our company provides TV subscription services straight to your device through the internet. This includes Smart TV Samsung & LG, PC, Mac, Apple iPhone, iPad, Apple TV 4 & 5, Amazon Firestick, IPTV box, Android phones, and tablets, Android box, MAG, STB Emulator.We give customers direct exclusive access to +120000 4K/Ultra HD channels, ranging from sports, movies and popular TV shows to netflix, amazon prime and Disney+",
+      "IPTV (Internet Protocol Television) is a digital television broadcasting protocol that delivers TV content over the internet instead of traditional cable or satellite. It allows you to stream live TV channels, movies, and series on any internet-connected device.",
+  },
+  {
+    question: "How many channels do you offer?",
+    answer:
+      "We offer over 23,000 live channels from around the world, including sports, news, entertainment, movies, and international channels from USA, Canada, UK, Mexico, and many other countries.",
+  },
+  {
+    question: "What devices are supported?",
+    answer:
+      "Our IPTV service works on all major devices including Smart TVs (Samsung, LG, Sony), Android TV boxes, Amazon Fire Stick, Apple TV, smartphones, tablets, computers, and more.",
   },
   {
     question: "What does the package include?",
@@ -16,19 +26,24 @@ const items = [
       "When you subscribe to HOLOIPTV, you get login credentials to IPTV server with instructions for how to setup it on your device.",
   },
   {
-    question: "What devices do you support?",
+    question: "Do you offer a free trial?",
     answer:
-      "We support all the IPTV boxes and android devices, Including MAG boxes and Formuler.",
+      "Yes! We offer a 24-hour free trial so you can test our service quality and channel selection before committing to a subscription.",
   },
   {
-    question: "Can I use 2 devices at the same time?",
+    question: "How do I set up the service?",
+    answer:
+      "Setup is simple! After purchase, you'll receive login credentials and setup instructions via email or WhatsApp. Most devices can be configured in under 5 minutes using our step-by-step guides.",
+  },
+  {
+    question: "What if I experience buffering?",
+    answer:
+      "Our anti-freeze system minimizes buffering. If you experience issues, check your internet connection or contact our support team for assistance.",
+  },
+  {
+    question: "Can I use the service on multiple devices?",
     answer:
       "Each line has only one connection, you can use only one device at a time, multiple IPs is ok. If you want to use your Tv when you are at home and your phone when you are outside it is ok, just remind you do not use 2 devices at the same time, your account may get blocked if you do it. There is no multiple room subscription if you want to use 2 devices at the same time u should buy the second line.",
-  },
-  {
-    question: "How many devices can I use with 1 account?",
-    answer:
-      "Using MAG or STB: Can not connect 2 MAC addresses to the same account. Using M3u files: You can use one m3u file for multiple devices, but only one device at a time.",
   },
 ];
 
@@ -77,7 +92,7 @@ const AccordianItem = ({
 };
 export default function Faq() {
   return (
-    <div className=" py-[72px] sm:py-24 flex justify-center">
+    <div className=" px-4 py-[72px] sm:py-24 flex justify-center">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
